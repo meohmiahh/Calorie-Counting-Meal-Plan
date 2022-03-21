@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display&family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Displau";
+  background-color: #f3f3f3;
+}
+
+section {
+  margin: 2rem 0 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: #78c7c5;
+  color: #024745;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: #024745;
+  color: white;
+}
+
+input {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border-color: #ade1e5;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #99d19c;
+  color: #0d5b59;
+  border: none;
+  font-family: "Righteous";
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #5a8767;
+  color: #ffffff;
+  transition: 0.23s;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 1rem;
+  max-width: 18rem;
+  box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Righteous";
+  color: #73ab84;
+}
+
+.nutrients ul {
+  display: flex;
+  width: 35rem;
+  justify-content: space-evenly;
+}
+
+.meal-name {
+  font-family: "Righteous";
+  color: #73ab84;
+}
+
+.nutrition-data {
+  font-family: "Playfair Display";
+  color: #0d5b59;
+}
+
+.macros-title {
+  font-family: "Righteous";
+  color: #0d5b59;
+}
+
+.meals {
+  display: flex;
+}
+
+.instructions {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display";
+  color: #0d5b59;
+}
+
+@media only screen and (max-width: 550px) {
+  .meals {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nutrients ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
